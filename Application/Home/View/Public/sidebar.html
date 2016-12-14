@@ -1,0 +1,32 @@
+<div class="sidebar">
+    <div class="widget widget_categories">
+        <h3 class="widget-tit">文章分类</h3>
+        <ul>
+            <volist name="cateres" id="vo">
+                <li class="cat-item cat-item-18">
+                    <a href="__MODULE__/Cate/index/id/{$vo.id}">{$vo.catename}</a>
+                </li>
+            </volist>
+        </ul>
+    </div>
+    <div class="widget widget_recent_entries">
+        <h3 class="widget-tit">最新发表</h3>
+        <ul>
+            <volist name="latest" id="vo">
+                <li>
+                    <a href="__MODULE__/Article/index/id/{$vo.id}">{$vo.title}</a>
+                </li>
+            </volist>
+        </ul>
+    </div>
+    <div class="widget widget_links">
+        <h3 class="widget-tit">友情链接</h3>
+        <ul class='xoxo blogroll'>
+            <volist name="linkres" id="vo">
+                <li>
+                    <a href="{$vo.url}" rel="friend" target="_blank">{$vo.title}</a>
+                </li>
+            </volist>
+        </ul>
+    </div>
+</div>

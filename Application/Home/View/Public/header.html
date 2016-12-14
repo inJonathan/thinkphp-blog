@@ -1,0 +1,12 @@
+<div class="topbar">
+    <div class="inner">
+        <ul class="nav">
+            <li><a href="__ROOT__">首页</a></li>
+            <volist name="cateres" id="vo">
+                <li <if condition="$vo.id eq $current">class="current-menu-item"</if> >
+                    <a href="__MODULE__/Cate/index/id/{$vo.id}">{$vo.catename}</a>
+                </li>
+            </volist>
+        </ul>
+    </div>
+</div>
