@@ -1,6 +1,9 @@
+# thinkphp博客  
 # thinkphp-blog  
-A simple blog application of ThinkPHP development.  
+
 由ThinkPHP开发的一个简单的博客系统  
+A simple blog application of ThinkPHP development.  
+
 ## 使用  
 ## How to use  
 
